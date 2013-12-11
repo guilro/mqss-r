@@ -14,6 +14,7 @@ Règles d'écriture du code
 
 ## Règles concernant le recodage
 - j'ai donné à toutes les variables des noms explicites (au détriment de leur concision je le reconnais) en *SyntaxeCamelCase* (mots collés et majuscules au début des mots, le nom provient du langage de programmation, "Camel", qui l'a initié). Je trouve ça plus lisible et moins moche que *je_mets_des_petits_tirets_bas_partout*
+- les variables **doivent être codées en `factor` !**
 
 L'ACM
 =====
