@@ -126,6 +126,32 @@ F_AIDPER Durant la scolarité, fréquence de l'aide du père pour faire les devo
 F_AIDPRO Durant la scolarité, fréquence de l'aide des professeurs pour faire les devoirs
 
 
+F_SOUSCO Durant la scolarité, séances gratuites d'aide aux devoirs ou d'accompagnement dans une association
+CS_MERE Profession de la mère sur 2 positions: issues du codage de T_PROFM (pour voir si inactif)
+CS_PERE
+P_NSTPTC Travail à temps complet / temps partiel
+P_QUIASS_A Membres de la famille parmi les associés
+P_QUIASS_B Amis parmi les associés
+P_QUIASS_C Autres personnes parmi les associés
+P_RAMI Recherche d'emploi par relations amicales ou personnelles
+P_RFAMIL Recherche d'emploi par relations familiales
+P_SADIM Travail le dimanche
+P_NSHTOT Nombre habituel total d'heures de travail par semaine (tous emplois confondus)
+
+C_FACTU Personne du ménage qui se charge de payer les factures et tenir les comptes
+C_ECOLE Personne du ménage qui se charge d'accompagner les enfants à l'école
+C_NOBB Recours à une pratique contraceptive.
+C_NOBBQ_* Moyen de contraception
+
+C_REPAS Personne du ménage qui se charge de préparer les repas quotidiens
+C_REPASQ Autre personne du ménage qui se charge de préparer les repas quotidiens
+COHABCONJ Situation de couple au moment de l'enquête
+MOCOE Mode de cohabitation d’ego au sein du ménage (budget commun)
+NACTIFS Nombre d’actifs dans le logement
+NHABD Nombre d’habitants du logement
+NBCJT Nombre de conjoints de l'enquêté qui vivent dans le logement
+NBENF Nombre d'enfants de l'enquêté qui vivent dans le logement
+
 
 C_PEPRC Ancienne profession du père du conjoint
 
