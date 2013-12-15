@@ -1,71 +1,32 @@
 ####LOGEMENT  &  INSTALLATION
  
-ANARRIV Année d’installation en France
-APARTBIS Type de budget (commun ou à part ) des personnes parmi les habitants du logement Si au moins deux habitants dans le logement
-AUTLOG Existence d'autres logements
-AUTPARD Logement de l’autre parent
-BCEGO Budget commun avec la personne enquêtée
 CPROP Indicateur pour savoir si l'enquêté vit chez ses parents
-DEPALOG Département de l’autre logement
-DEPNAIS Département/territoire de naissance
-DEPNC Département de naissance du conjoint vivant dans le logement
-DEPNE Département de naissance de l'enquêté
-DOLOG Durée d'occupation du logement (en %)
 EGO L'enquêté vit-il dans le logement?
 EXTLOG Autres habitants du logement
-FAMPRINC Indicateur d’appartenance à la famille principale
-INSTALLE Année d'installation de l'enquêté
 JOURAN Nombre de jours par an dans le logement
 JOURSEM Nombre de jours dans la semaine dans le logement
 MER1E Existence de la mère
 MER1EC Lieu de vie de la mère (conjointe de l'enquêté vivant dans le logement)
 MER1EE Lieu de vie de la mère de l'enquêté
 MER2E Numéro d'ordre de la mère dans le logement
-MOCOE Mode de cohabitation d’ego au sein du ménage (budget commun)
-MOISAN Nombre de mois par an dans le logement
-NACTIFS Nombre d’actifs dans le logement
 NBAUT Nombre de personnes vivant dans le logement autres que l'enquêté, son conjoint, son enfant, son parent
 NBPARENT Le père et/ou la mère de l'enquêté vivent-ils dans le logement?
 NHABD Nombre d’habitants du logement
 NPERS Nombre de personnes du logement
-NPERS_MEN Nombre de personnes du ménage (budget commun avec ego)
 PER1E Existence du père
 PER1EC Lieu de vie du père (conjoint de l'enquêté vivant dans le logement)
 PER1EE Lieu de vie du père de l'enquêté
 PER2E Numéro d'ordre du père dans le logement
-SITUA Situation principale vis-à-vis du travail
 TYPVOISR Type de voisinage du logement
  
 ####REVENUS
  
 A_AIDES Aides financières régulières des parents, de la famille ou des amis y compris une pension alimentaire, le paiement du loyer, direct ou indirect
-A_FAM Autres prestations familiales ou sociales, bourses
-A_LOG Allocations logement, aide au logement
-A_MONTAN Montant mensuel des ressources de l'ensemble du ménage
  
 ####NATIONALITE
  
-N_INDMER Choix de nationalité de la mère si née dans une ancienne colonie française
-N_INDPER Choix de nationalité du père si né dans une ancienne colonie française
 N_MELEV L'enquêté a-t-il été élevé dans l'enfance par une autre femme que la mère ?
-N_MELNOI Numéro d'ordre individuel (NOI) de la femme qui a élevé l'enquêté si elle vit dans le logement
-N_MELOU Lieu où vit la femme qui a élevé l'enquêté
- 
 N_PELEV L'enquêté a-t-il été élevé dans l'enfance par un autre homme que le père ?
-N_PELNOI Numéro d'ordre individuel (NOI) de l'homme qui a élevé l'enquêté s'il vit dans le logement
-N_PELOU Lieu où vit l'homme qui a élevé l'enquêté
-STATUMIGM Situation au regard de la migration de la mère
-STATUMIGP Situation au regard de la migration du père
- 
-####LANGUES
- 
-L_LNFREA Langue la plus souvent utilisée en famille
-L_LNMENF1 Langue parlée par la mère à l'enquêté lorsqu'il était enfant, intitulé en clair
-L_LNMENF2 Autre langue parlée par la mère à l'enquêté lorsqu'il était enfant, intitulé en clair
-L_LNPENF1 Langue parlée par le père à l'enquêté lorsqu'il était enfant, intitulé en clair
-L_LNPENF2 Autre langue parlée par le père à l'enquêté lorsqu'il était enfant, intitulé en clair
-L_LRFAMI Utilisation de la langue de référence pour parler avec la famille autre que le conjoint
-L_LRVOIS Utilisation de la langue de référence pour parler avec les voisins, les commerçants
  
 ####TRAJECTOIRES MIGRATOIRES
  
@@ -80,20 +41,12 @@ M_RFEGOQ Personne ayant permis le regroupement familial
  
 ####RELATIONS FAMILIALES ET TRANSMISSIONS
  
-T_ALCOOL Alcoolisme d'un de ses parents vécu par l'enquêté durant sa jeunesse, avant ses 18 ans
-T_ARGENT Gros problèmes d'argent dans la famille vécus par l'enquêté durant sa jeunesse, avant ses 18 ans
-T_ARRIVM Année d'installation de la mère de l'enquêté en France métropolitaine
-T_ARRIVP Année d'installation du père de l'enquêté en France métropolitaine
 T_CAMIS Quand l'enquêté avait 18 ans, se disputait-il avec ses parents à propos de ses amis, ses fréquentations
 T_CAMOUR Quand l'enquêté avait 18 ans, se disputait-il avec ses parents à propos de ses relations amoureuses
 T_CLOISIR Quand l'enquêté avait 18 ans, se disputait-il avec ses parents à propos de ses sorties, ses loisirs
 T_CPROF Quand l'enquêté avait 18 ans, se disputait-il avec ses parents sur ses projets ou sa situation professionnels
 T_CRELIG Quand l'enquêté avait 18 ans, se disputait-il avec ses parents à propos de la religion, les traditions
 T_CSCOL Quand l'enquêté avait 18 ans, se disputait-il avec ses parents à propos de sa scolarité
-T_DCFAM Décès d'un membre de sa famille vécu par l'enquêté durant sa jeunesse, avant ses 18 ans
-T_DCMER Année du décès de la mère de l'enquêté ou de celle qui l'a élevé
-T_DCPER Année du décès du père de l'enquêté ou de celui qui l'a élevé
-T_DISPAR Graves disputes ou conflits entre ses parents vécus par l'enquêté durant sa jeunesse, avant ses 18 ans
 T_ELEV_A Jusqu'à ses 18 ans, a été élevé par ses deux parents en couple
 T_ELEV_B Jusqu'à ses 18 ans, a été élevé par ses deux parents en résidence alternée
 T_ELEV_C Jusqu'à ses 18 ans, a été élevé dans une famille polygame
@@ -107,15 +60,6 @@ T_ELEV_J Jusqu'à ses 18 ans, a été élevé en institution
 T_ELEV_K Jusqu'à ses 18 ans, a été élevé en famille d'accueil
 T_ELEV_L Jusqu'à ses 18 ans, a été élevé chez un employeur
 T_ELEV_M Jusqu'à ses 18 ans, a été élevé par quelqu'un d'autre
-T_ELEV_NBREP Personnes qui ont élevé l'enquêté jusqu'à ses 18 ans, nombre d'items choisis
-T_HIST Les parents de l'enquêté lui ont-ils raconté leur venue en France métropolitaine ?
-T_PARMIG Les parents de l'enquêté ou l'un d'eux ont-ils déjà vécu en France métropolitaine pendant au moins un an?
-T_VIOLEN Violences graves subies par l'enquêté durant sa jeunesse, avant ses 18 ans
- 
-####IMAGE DE SOI ET REGARD DES AUTRES
- 
-X_PRESA_N "Situation de famille " choisie par l'enquêté pour se définir (N°de fiche-adresse pair)
-X_PRESB_H "Situation de famille" choisie par l'enquêté pour se définir (N° de fiche-adresse impair)
  
 ####EDUCATION
  
