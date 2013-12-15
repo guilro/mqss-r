@@ -1,6 +1,6 @@
 
 # Les variables étant TEO$Variable1, nécessairement de type facteur
-ACM <- subset (TEO, select = c(AidesRecues, AideAdminFamille, EmpruntFamille, GardeFamille, Caution, MoyenEmploi, EntretienConjointPresent, EntretienEnfantsPresents, EntretienParentsPresents, EntretienAutreFamillePresents, PbArgentFamilleAv18Ans, ContactFamilleEtranger, FreqRencontreFamille, Enfants, AppartenanceAsociationPaysOrigine, Pretbancaire, AppartenancAssociationSolidarite, AideVersEtranger, AmisMemeOrigine, AideaPersonneExterieure, NbLogement, AideDevoirAsso, NbHeuresTravail, PrepareRepas))
+ACM <- subset (TEO, select = c(AidesRecues, AideAdminFamille, EmpruntFamille, GardeFamille, Caution, MoyenEmploi, EntretienConjointPresent, EntretienEnfantsPresents, EntretienParentsPresents, EntretienAutreFamillePresents, PbArgentFamilleAv18Ans, ContactFamilleEtranger, FreqRencontreFamille, Enfants, AppartenanceAsociationPaysOrigine, Pretbancaire, AppartenancAssociationSolidarite, AideVersEtranger, AmisMemeOrigine, AideaPersonneExterieure, NbLogement, AideDevoirAsso, NbHeuresTravail, PrepareRepas, EtudesSuperieures))
 
 res.ACM <- MCA (ACM, level.ventil=0.005, graph=F)
 
