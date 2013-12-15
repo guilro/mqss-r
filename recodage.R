@@ -1,7 +1,7 @@
 ## Recodage de variables
 
 ## Aides financières régulières des parents, de la famille ou des amis y compris une pension alimentaire, le paiement du loyer, direct ou indirect
-TEO$AidesRecues <- factor(TEO$A_Aides)
+TEO$AidesRecues <- factor(TEO$A_Aides, label = c("AidesRecuesOui", "AidesRecuesNon", "NSP", "NSPP"))
 summary(TEO$AidesRecues)
 
 ## Opinion sur le niveau de vie du ménage
@@ -155,7 +155,9 @@ TEO$AmisMemeOrigine <- factor (TEO$A_Rorig, labels = c("+moitie", "-moitie", "mo
                                                                          
 ## Apport d'une aide financière régulière à des personnes extérieures au ménage
 TEO$AideaPersonneExterieure <- factor (TEO$A_Verse, labels = c("Oui", "Non"))
-                                                                         
+
+## Nombre de personnes du logement
+TEO$NbLogement <- cut(TEO$NPERS, breaks = c(0, 1, 2, 3, 4, 5, Inf), labels = c (1:6))
 
 ####################################
 # autres variable rrcodée par le passé qui peuvent toujours servi
