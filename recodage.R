@@ -164,9 +164,24 @@ TEO$NbLogement <- cut(TEO$NPERS, breaks = c(0, 1, 2, 3, 4, 5, Inf), labels = c (
 summary(TEO$P_Nshtot)
 TEO$NbHeuresTravail <- cut(TEO$P_Nshtot, breaks = c(0, 35, 50, 60, Inf), labels = c ("Moins de 35h", "35h à 50h", "de 50h à 60h", "+ de 60h"))
 
+# sexe
+TEO$Sexe <- factor(TEO$Sexee, label=c("Homme", "Femme"))
+TEO$SexeConjoint <- factor(TEO$Sexec, label=c("Homme", "Femme"))
+
+# C_REPAS Personne du ménage qui se charge de préparer les repas quotidiens
+summary(TEO$C_Repas)
+TEO$PrepareRepas <- 0
+TEO$PrepareRepas [TEO$Sexe == "Homme" & TEO$C_Repas == 1] <- "Homme"
+TEO$PrepareRepas [TEO$SexeConjoint == "Homme" & TEO$C_Repas == 3] <- "Homme"
+TEO$PrepareRepas [TEO$Sexe == "Femme" & TEO$C_Repas == 1] <- "Femme"
+TEO$PrepareRepas [TEO$SexeConjoint == "Femme" & TEO$C_Repas == 3] <- "Femme"
+TEO$PrepareRepas [TEO$C_Repas == 2] <- "Égalité"
+TEO$PrepareRepas <- factor(TEO$PrepareRepas)
+freq(TEO$PrepareRepas)
+
 ####################################
 # autres variable rrcodée par le passé qui peuvent toujours servi
-TEO$SEXE_PI <- factor(TEO$SEXE_PI, label=c("Homme", "Femme"))
+TEO$SEXE_PI <- factor(TEO$Sexee, label=c("Homme", "Femme"))
 ## Par defaut, R presente les modalites par ordre alphabetique, mais on peut modifier cet ordre avec l'option "level" 
 ## On veut que les Femmes apparaissent avant les hommes
 TEO$SEXE_PI <- factor(TEO$SEXE_PI, levels=c("Femme", "Homme"))
@@ -183,6 +198,7 @@ TEO$DIPLO_PI_REG [TEO$DIPLO_PI == "Bac_gen"] <- "No_sup"
 TEO$DIPLO_PI_REG [TEO$DIPLO_PI == "Bac+2"] <- "Sup"
 TEO$DIPLO_PI_REG [TEO$DIPLO_PI == "Sup_Bac+2"] <- "Sup"
 table(TEO$DIPLO_PI_REG, useNA="ifany")
+TEO$EtudesSuperieures <- factor(TEO$DIPLO_PI_REG)
 
 # age
 TEO$AGE_PI_QUIN <- cut(TEO$Agenq, c(17, 25, 30, 35, 40, 45, 50, 55, 60), include.lowest=TRUE)
