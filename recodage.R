@@ -129,6 +129,34 @@ freq(TEO$ContactFamilleEtranger)
 TEO$FreqRencontreFamille <- factor(TEO$A_Rfami, label = c("+moitié", "-moitié", "moit-moit"))
 freq(TEO$FreqRencontreFamille)
 
+## Rémunération mensuelle nette de l'activité du (de la) conjoint(e)
+TEO$SalaireConjoint <- cut(TEO$C_Salc, breaks = c(0, 1200, 2500, Inf), labels = c(1:3))
+
+## Nombre d'enfants 2-17 dans le logement :
+TEO$Enfants <- cut(TEO$Nbenfmin, breaks = c(0, 1, 2, 3, Inf), labels = c (1:4))
+
+## Nombre d'unions au cours de la vie
+TEO$NombreUnion <- cut(TEO$Nbunions, breaks = c(0, 1, 2, 3, Inf), labels = c(1:4))
+
+## Appartenance à une association regroupant des membres originaires du même pays, DOM ou TOM que l'enquêté ou ses parents
+TEO$AppartenanceAsociationPaysOrigine <- factor(TEO$I_Assor, labels = c ("Membre", "PasMembre", "NSP"))
+
+## Appartenance de l'enquêté à une association de solidarité ou d'entraide (y compris tontine)
+TEO$AppartenancAssociationSolidarite <- factor(TEO$I_Asssol, labels = c ("Membre", "PasMembre", "Refus", "NSP"))                                                                     
+
+# Demande d'un prêt dans une banque depuis 5 ans
+TEO$Pretbancaire <- factor(TEO$D_Banqfq, labels = c ("Emprunteur", "NonEmprunteur", "Refus", "NSP"))
+                                                                         
+## Aide versée dans un DOM, un TOM ou un autre pays que la France
+TEO$AideVersEtranger <- factor(TEO$A_Piver, labels = c("Oui", "Non"))
+                                                                         
+## Proportion parmi les amis de personnes de la même origine que l'enquêté
+TEO$AmisMemeOrigine <- factor (TEO$A_Rorig, labels = c("+moitie", "-moitie", "moitie-moitie", "Refus", "NSP"))
+                                                                         
+## Apport d'une aide financière régulière à des personnes extérieures au ménage
+TEO$AideaPersonneExterieure <- factor (TEO$A_Verse, labels = c("Oui", "Non"))
+                                                                         
+
 ####################################
 # autres variable rrcodée par le passé qui peuvent toujours servi
 TEO$SEXE_PI <- factor(TEO$SEXE_PI, label=c("Homme", "Femme"))
