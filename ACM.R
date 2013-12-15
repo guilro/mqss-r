@@ -1,8 +1,11 @@
 
 # Les variables étant TEO$Variable1, nécessairement de type facteur
-ACM <- subset (TEO, select = c(AidesRecues, AideAdminFamille, EmpruntFamille, GardeFamille, Caution, MoyenEmploi, EntretienConjointPresent, EntretienEnfantsPresents, EntretienParentsPresents, EntretienAutreFamillePresents, PbArgentFamilleAv18Ans, ContactFamilleEtranger, FreqRencontreFamille, SalaireConjoint, Enfants, AppartenanceAsociationPaysOrigine, Pretbancaire, AppartenancAssociationSolidarite, AideVersEtranger, AmisMemeOrigine, AideaPersonneExterieure, NbLogement))
+ACM <- subset (TEO, select = c(AidesRecues, AideAdminFamille, EmpruntFamille, GardeFamille, Caution, MoyenEmploi, EntretienConjointPresent, EntretienEnfantsPresents, EntretienParentsPresents, EntretienAutreFamillePresents, PbArgentFamilleAv18Ans, ContactFamilleEtranger, FreqRencontreFamille, Enfants, AppartenanceAsociationPaysOrigine, Pretbancaire, AppartenancAssociationSolidarite, AideVersEtranger, AmisMemeOrigine, AideaPersonneExterieure, NbLogement, AideDevoirAsso))
 
 res.ACM <- MCA (ACM, level.ventil=0.005, graph=F)
+
+## Test immédiat : nuage des 15 modalités les plus contributives
+plot.MCA(res.ACM, invisible=c("ind"), title="Nuage des modalites actives Plan 1-2", axes=c(1,2), cex=0.8, selectMod="contrib 15") # On sélectionne les modalités les pluts contributives
 
 # Etude des valeurs propres : inertie des axes
 valprop.ACM <- res.ACM$eig[1:10,]
@@ -39,6 +42,7 @@ plot.MCA(res.ACM, invisible=c("var", "quali.sup"), title="Nuage des individus - 
 # Plusieurs arguments utiles : cex, autoLab="auto" ; selectMod
 plot.MCA(res.ACM, invisible=c("ind"), title="Nuage des modalites actives Plan 1-2", axes=c(1,2), cex=0.8) # On réduit la taille des étiquettes
 plot.MCA(res.ACM, invisible=c("ind"), title="Nuage des modalites actives Plan 1-2", axes=c(1,2), cex=0.8, selectMod=c(1:2)) # On sélectionne certaines modalités
+plot.MCA(res.ACM, invisible=c("ind"), title="Nuage des modalites actives Plan 1-2", axes=c(1,2), cex=0.8, selectMod="contrib 15") # On sélectionne les modalités les pluts contributives
 
 #Par exemple, on sélectionne donc manuellement les modalités que l'on souhaite représenter sur le premier axe
 plot.MCA(res.ACM, invisible=c("ind"), title="Nuage des modalites actives Plan 1-2", axes=c(1,2), autoLab="auto", selectMod=c(1,2,4,10,42,46,50)) #premier axe

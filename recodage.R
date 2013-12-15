@@ -129,14 +129,15 @@ freq(TEO$ContactFamilleEtranger)
 TEO$FreqRencontreFamille <- factor(TEO$A_Rfami, label = c("+moitié", "-moitié", "moit-moit"))
 freq(TEO$FreqRencontreFamille)
 
-## Rémunération mensuelle nette de l'activité du (de la) conjoint(e)
-TEO$SalaireConjoint <- cut(TEO$C_Salc, breaks = c(0, 1200, 2500, Inf), labels = c(1:3))
-
 ## Nombre d'enfants 2-17 dans le logement :
 TEO$Enfants <- cut(TEO$Nbenfmin, breaks = c(0, 1, 2, 3, Inf), labels = c (1:4))
 
 ## Nombre d'unions au cours de la vie
 TEO$NombreUnion <- cut(TEO$Nbunions, breaks = c(0, 1, 2, 3, Inf), labels = c(1:4))
+
+# F_SOUSCO Durant la scolarité, séances gratuites d'aide aux devoirs ou d'accompagnement dans une association
+table(TEO$F_Sousco)
+TEO$AideDevoirAsso <- factor(TEO$F_Sousco, label = c("AideDevoirAssoOui", "AidDevoirAssoNon")) 
 
 ## Appartenance à une association regroupant des membres originaires du même pays, DOM ou TOM que l'enquêté ou ses parents
 TEO$AppartenanceAsociationPaysOrigine <- factor(TEO$I_Assor, labels = c ("Membre", "PasMembre", "NSP"))
@@ -158,6 +159,10 @@ TEO$AideaPersonneExterieure <- factor (TEO$A_Verse, labels = c("Oui", "Non"))
 
 ## Nombre de personnes du logement
 TEO$NbLogement <- cut(TEO$NPERS, breaks = c(0, 1, 2, 3, 4, 5, Inf), labels = c (1:6))
+
+# P_NSHTOT Nombre habituel total d'heures de travail par semain
+summary(TEO$P_Nshtot)
+TEO$NbHeuresTravail <- cut(TEO$P_Nshtot, breaks = c(0, 35, 50, 60, Inf), labels = c ("Moins de 35h", "35h à 50h", "de 50h à 60h", "+ de 60h"))
 
 ####################################
 # autres variable rrcodée par le passé qui peuvent toujours servi
