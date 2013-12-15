@@ -11,6 +11,16 @@ valprop.ACM
 copie(valprop.ACM)
 barplot(res.ACM$eig[1:10,2], main="Histogramme des valeurs propres", names.arg=1:10, xlab="Axes", ylab="Pourcentage d'inertie") 
 
+# RESULTATS D'ACM1 SUR LES VARIABLES 
+# On exporte les informations sur les axes et sur les variables : contributions, cos2 et coordonnees ... 
+axes.ACM <- dimdesc(res.ACM1, axes=c(1,2,3,4))
+axes.ACM
+write.infile(axes.ACM, file="../ACM1.var.csv", sep="\t")
+
+varact.ACM <- res.ACM$var
+varact.ACM
+write.infile(varact.ACM, file="../ACM1.varact.csv", sep="\t")
+
 # Representation des variables
 plot.MCA(res.ACM, choix="var", axes=c(1,2))
 plot.MCA(res.ACM, choix="var", axes=c(1,3))
