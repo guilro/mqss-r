@@ -125,6 +125,7 @@ freq(TEO$EntretienAutresPresents)
 ## Gros problèmes d'argent dans la famille vécus par l'enquêté durant sa jeunesse, avant ses 18 ans
 TEO$PbArgentFamilleAv18Ans <- factor(TEO$T_Argent, label = c("Oui", "Non", "Nspp"))
 freq(TEO$PbArgentFamilleAv18Ans)
+TEO$PbArgentFamilleAv18Ans <- relevel(TEO$PbArgentFamilleAv18Ans, ref="Non")
 
 ## Contacts avec de la famille ou des amis qui vivent dans un autre pays que ## la France, un DOM ou un TOM
 TEO$ContactFamilleEtranger <- factor(TEO$A_News, label = c("Souvent", "Parfois", "Jamais"))
