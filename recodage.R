@@ -61,6 +61,12 @@ TEO$GardeFamille [TEO$A_Genfq_a == 0 & TEO$A_Genfq_b == 0 & TEO$A_Genfq_c == 0 &
 TEO$GardeFamille <- factor(TEO$GardeFamille)
 freq(TEO$GardeFamille)
 
+## L'enquêté a-t-il reçu l'aide de la famille dans un des trois domaine ?
+TEO$AideFamille [TEO$GardeFamille == "GardeFamilleOui" | TEO$EmpruntFamille == "EmpruntFamilleOui" | TEO$AideAdminFamille == "AideAdminFamilleOui"] <- "AideFamilleOui"
+TEO$AideFamille [TEO$GardeFamille == "GardeFamilleNon" & TEO$EmpruntFamille == "EmpruntFamilleNon" & TEO$AideAdminFamille == "AideAdminFamilleNon"] <- "AideFamilleNon"
+table(TEO$AideFamille)
+TEO$AideFamille <- factor(TEO$AideFamille)
+
 ## Garde des enfants par un(e) amie(s) A_GENFQ_E
 ## Garde des enfants par un(e) voisin(e) A_GENFQ_F
 ## Personne à qui l'enquêté a confié ses enfants, indicateur de non réponse A_GENFQ_FLAG
@@ -122,11 +128,12 @@ freq(TEO$PbArgentFamilleAv18Ans)
 
 ## Contacts avec de la famille ou des amis qui vivent dans un autre pays que ## la France, un DOM ou un TOM
 TEO$ContactFamilleEtranger <- factor(TEO$A_News, label = c("Souvent", "Parfois", "Jamais"))
+TEO$ContactFamilleEtranger <- relevel(TEO$ContactFamilleEtranger, ref="Jamais")
 freq(TEO$ContactFamilleEtranger)
 
 ## Fréquence des recontres dans les 15 derniers jours avec des personnes de la
 ## famille proche ou éloignée
-TEO$FreqRencontreFamille <- factor(TEO$A_Rfami, label = c("+moitié", "-moitié", "moit-moit"))
+TEO$FreqRencontreFamille <- factor(TEO$A_Rfami, label = c("+ dune fois", "une fois", "pas du tout"))
 freq(TEO$FreqRencontreFamille)
 
 ## Nombre d'enfants 2-17 dans le logement :
@@ -150,7 +157,8 @@ TEO$Pretbancaire <- factor(TEO$D_Banqfq, labels = c ("Emprunteur", "NonEmprunteu
                                                                          
 ## Aide versée dans un DOM, un TOM ou un autre pays que la France
 TEO$AideVersEtranger <- factor(TEO$A_Piver, labels = c("Oui", "Non"))
-                                                                         
+TEO$AideVersEtranger <- relevel(TEO$AideVersEtranger, ref="Non")
+
 ## Proportion parmi les amis de personnes de la même origine que l'enquêté
 TEO$AmisMemeOrigine <- factor (TEO$A_Rorig, labels = c("+moitie", "-moitie", "moitie-moitie", "Refus", "NSP"))
                                                                          
@@ -202,6 +210,7 @@ TEO$EtudesSuperieures <- factor(TEO$DIPLO_PI_REG)
 
 # age
 TEO$AGE_PI_QUIN <- cut(TEO$Agenq, c(17, 25, 30, 35, 40, 45, 50, 55, 60), include.lowest=TRUE)
+TEO$AgeQuin <- factor(TEO$AGE_PI_QUIN)
 TEO$AGE_PI_1 <- cut(TEO$Agenq, c(17, 18, 21, 25, 60), include.lowest=TRUE)
 TEO$AGE_PI_UNIT <- cut(TEO$Agenq, (17:60), include.lowest=TRUE)
 table(TEO$AGE_PI_QUIN)
