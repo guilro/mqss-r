@@ -128,8 +128,8 @@ freq(TEO$PbArgentFamilleAv18Ans)
 TEO$PbArgentFamilleAv18Ans <- relevel(TEO$PbArgentFamilleAv18Ans, ref="Non")
 
 ## Contacts avec de la famille ou des amis qui vivent dans un autre pays que ## la France, un DOM ou un TOM
-TEO$ContactFamilleEtranger <- factor(TEO$A_News, label = c("Souvent", "Parfois", "Jamais"))
-TEO$ContactFamilleEtranger <- relevel(TEO$ContactFamilleEtranger, ref="Jamais")
+TEO$ContactFamilleEtranger <- factor(TEO$A_News, label = c("CFESouvent", "CFEParfois", "CFEJamais"))
+TEO$ContactFamilleEtranger <- relevel(TEO$ContactFamilleEtranger, ref="CFEJamais")
 freq(TEO$ContactFamilleEtranger)
 
 ## Fréquence des recontres dans les 15 derniers jours avec des personnes de la

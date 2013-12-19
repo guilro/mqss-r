@@ -1,0 +1,263 @@
+Dim 1
+quali
+   	R2	p.value	
+EmpruntFamille	0.1509	0	
+ContactFamilleEtranger	0.0972	0	
+AppartenanceAsociationPaysOrigine	0.0931	0	
+AppartenancAssociationSolidarite	0.09	0	
+AideVersEtranger	0.6567	0	
+AideaPersonneExterieure	0.6491	0	
+Emprunt	0.2626	0	
+EmpruntAmi	0.1409	0	
+DIPLO_PI	0.0279	0	
+PbArgentFamilleAv18Ans	0.0252	0	
+Pretbancaire	0.0175	0	
+AmisMemeOrigine	0.0092	0	
+FreqRencontreFamille	0.0061	0	
+GardeFamille	0.0017	0	
+AideAdminFamille	0.0015	0	
+AidesRecues	0.001	0	
+
+category
+   	Estimate	p.value	
+EmpruntAmi_Non	0.3881	0	
+EmpruntOui	0.3149	0	
+AideaPersonneExterieure_Oui	0.4154	0	
+AideVersEtranger_Oui	0.3597	0	
+AideVersEtranger_Non	0.1936	0	
+AppartenancAssociationSolidarite_Membre	0.249	0	
+CFESouvent	0.1388	0	
+EmpruntFamilleOui	0.2826	0	
+AppartenanceAsociationPaysOrigine_Membre	0.2496	0	
+Emprunteur	0.0499	0	
+Sup_Bac+2	0.0879	0	
+-moitie	0.0587	0	
+pas du tout	0.0474	0	
+moitie-moitie	0.0571	0	
+PbArgentFamilleAv18Ans_Oui	0.1019	0	
+GardeFamilleOui	0.0224	0	
+AideAdminFamilleOui	0.0262	0	
+DIPLO_PI.NA	0.088	0	
+AidesRecuesOui	0.0246	0	
+CEP	0.0249	0.0339	
+AmisMemeOrigine.NA	-0.0183	0.0077	
+PbArgentFamilleAv18Ans_Non	-0.0316	0.0027	
+PbArgentFamilleAv18Ans_Nspp	-0.0704	6e-04	
+Bac_gen	-0.0262	5e-04	
+AidesRecuesNon	-0.0246	0	
+AppartenanceAsociationPaysOrigine_PasMembre	-0.0331	0	
+AideAdminFamilleNon	-0.0262	0	
+une fois	-0.0258	0	
++ dune fois	-0.0216	0	
+Aucun_dip	-0.0386	0	
+GardeFamilleNon	-0.0224	0	
+Bac_techno_pro	-0.0515	0	
+NSP	-0.1047	0	
+CAP_BEP	-0.0996	0	
+NonEmprunteur	-0.0499	0	
+EmpruntAmi_Oui	-0.3881	0	
+EmpruntNon	-0.3149	0	
+AideaPersonneExterieure_Non	-0.4154	0	
+AideVersEtranger.NA	-0.5533	0	
+AppartenancAssociationSolidarite_PasMembre	-0.249	0	
+AppartenanceAsociationPaysOrigine.NA	-0.2165	0	
+CFEJamais	-0.1361	0	
+EmpruntFamilleNon	-0.2826	0	
+
+Dim 2
+quali
+   	R2	p.value	
+EmpruntFamille	0.5384	0	
+AideVersEtranger	0.2118	0	
+AideaPersonneExterieure	0.2105	0	
+Emprunt	0.6871	0	
+EmpruntAmi	0.2144	0	
+DIPLO_PI	0.0344	0	
+ContactFamilleEtranger	0.0248	0	
+AppartenancAssociationSolidarite	0.0203	0	
+AideAdminFamille	0.0201	0	
+AidesRecues	0.0164	0	
+AppartenanceAsociationPaysOrigine	0.0155	0	
+FreqRencontreFamille	0.0092	0	
+GardeFamille	0.0059	0	
+PbArgentFamilleAv18Ans	0.0049	0	
+Pretbancaire	0.0029	0	
+AmisMemeOrigine	0.0012	0	
+
+category
+   	Estimate	p.value	
+EmpruntAmi_Non	0.4554	0	
+EmpruntOui	0.4845	0	
+AideaPersonneExterieure_Non	0.225	0	
+AideVersEtranger.NA	0.2998	0	
+EmpruntFamilleOui	0.5077	0	
+AppartenancAssociationSolidarite_PasMembre	0.1125	0	
+AideAdminFamilleOui	0.0923	0	
+AidesRecuesOui	0.0937	0	
+AppartenanceAsociationPaysOrigine.NA	0.0768	0	
+CFEJamais	0.0476	0	
++ dune fois	0.0419	0	
+GardeFamilleOui	0.0396	0	
+Bac_techno_pro	0.0802	0	
+Aucun_dip	0.0552	0	
+CAP_BEP	0.0477	0	
+NonEmprunteur	0.0193	0	
+CFEParfois	0.0272	0	
+Bac_gen	0.0502	0	
+BEPC	0.0492	0	
++moitie	0.0192	3e-04	
+PbArgentFamilleAv18Ans_Oui	0.0422	0.0028	
+AmisMemeOrigine.NA	-0.0211	0.0013	
+AppartenanceAsociationPaysOrigine_PasMembre	-0.0196	0.0012	
+CEP	-0.048	0	
+Bac+2	-0.0324	0	
+DIPLO_PI.NA	-0.0958	0	
+AppartenanceAsociationPaysOrigine_Membre	-0.0571	0	
+Emprunteur	-0.0193	0	
+pas du tout	-0.0389	0	
+GardeFamilleNon	-0.0396	0	
+Sup_Bac+2	-0.1064	0	
+AidesRecuesNon	-0.0937	0	
+AideVersEtranger_Non	-0.1168	0	
+AideAdminFamilleNon	-0.0923	0	
+AppartenancAssociationSolidarite_Membre	-0.1125	0	
+CFESouvent	-0.0748	0	
+AideVersEtranger_Oui	-0.1829	0	
+EmpruntAmi_Oui	-0.4554	0	
+EmpruntNon	-0.4845	0	
+AideaPersonneExterieure_Oui	-0.225	0	
+EmpruntFamilleNon	-0.5077	0	
+
+Dim 3
+quali
+   	R2	p.value	
+PbArgentFamilleAv18Ans	0.075	0	
+AppartenanceAsociationPaysOrigine	0.3552	0	
+AppartenancAssociationSolidarite	0.1883	0	
+AideVersEtranger	0.0745	0	
+AmisMemeOrigine	0.2231	0	
+AideaPersonneExterieure	0.0699	0	
+DIPLO_PI	0.3842	0	
+AideAdminFamille	0.0614	0	
+ContactFamilleEtranger	0.049	0	
+FreqRencontreFamille	0.0352	0	
+AidesRecues	0.0191	0	
+Pretbancaire	0.0083	0	
+EmpruntAmi	6e-04	2e-04	
+Emprunt	4e-04	0.0023	
+GardeFamille	3e-04	0.0157	
+
+category
+   	Estimate	p.value	
+Aucun_dip	0.1661	0	
+AideaPersonneExterieure_Oui	0.1135	0	
+AppartenancAssociationSolidarite_PasMembre	0.2997	0	
+AppartenanceAsociationPaysOrigine.NA	0.2551	0	
+AideAdminFamilleOui	0.1413	0	
+DIPLO_PI.NA	0.4122	0	
+CFEJamais	0.0985	0	
+CEP	0.2093	0	
+AmisMemeOrigine.NA	0.1338	0	
++ dune fois	0.0747	0	
+AideVersEtranger_Non	0.1292	0	
++moitie	0.085	0	
+AidesRecuesNon	0.0885	0	
+NonEmprunteur	0.0287	0	
+CAP_BEP	0.0335	0	
+PbArgentFamilleAv18Ans_Nspp	0.0882	0	
+moitie-moitie	0.0234	0	
+AideVersEtranger_Oui	0.0225	0	
+PbArgentFamilleAv18Ans_Oui	0.0509	0	
+EmpruntAmi_Oui	0.0216	2e-04	
+EmpruntNon	0.0106	0.0023	
+GardeFamilleNon	0.0074	0.0157	
+GardeFamilleOui	-0.0074	0.0157	
+NSP	-0.0265	0.0039	
+EmpruntOui	-0.0106	0.0023	
+EmpruntAmi_Non	-0.0216	2e-04	
+une fois	-0.0141	1e-04	
+AppartenanceAsociationPaysOrigine_Membre	-0.0421	0	
+Bac_techno_pro	-0.0457	0	
+Emprunteur	-0.0287	0	
+CFESouvent	-0.045	0	
+PbArgentFamilleAv18Ans_Non	-0.1391	0	
+pas du tout	-0.0607	0	
+CFEParfois	-0.0535	0	
+AidesRecuesOui	-0.0885	0	
+Bac+2	-0.1861	0	
+AideAdminFamilleNon	-0.1413	0	
+Sup_Bac+2	-0.3497	0	
+Bac_gen	-0.2407	0	
+AideaPersonneExterieure_Non	-0.1135	0	
+-moitie	-0.2157	0	
+AideVersEtranger.NA	-0.1517	0	
+AppartenancAssociationSolidarite_Membre	-0.2997	0	
+AppartenanceAsociationPaysOrigine_PasMembre	-0.213	0	
+
+Dim 4
+quali
+   	R2	p.value	
+AideAdminFamille	0.1159	0	
+GardeFamille	0.2384	0	
+ContactFamilleEtranger	0.1487	0	
+FreqRencontreFamille	0.1494	0	
+Pretbancaire	0.2224	0	
+AideVersEtranger	0.1668	0	
+DIPLO_PI	0.335	0	
+AmisMemeOrigine	0.0349	0	
+AppartenanceAsociationPaysOrigine	0.0293	0	
+AideaPersonneExterieure	0.0197	0	
+AppartenancAssociationSolidarite	0.0116	0	
+EmpruntAmi	0.0104	0	
+EmpruntFamille	0.0074	0	
+PbArgentFamilleAv18Ans	0.0065	0	
+AidesRecues	0.0054	0	
+Emprunt	3e-04	0.0128	
+
+category
+   	Estimate	p.value	
+DIPLO_PI.NA	0.6207	0	
+AideVersEtranger_Oui	0.2576	0	
+NonEmprunteur	0.1461	0	
+pas du tout	0.1624	0	
+CFESouvent	0.1383	0	
+GardeFamilleNon	0.218	0	
+AideAdminFamilleOui	0.1914	0	
+AppartenanceAsociationPaysOrigine_Membre	0.1695	0	
+AmisMemeOrigine.NA	0.1406	0	
+AideVersEtranger.NA	0.0815	0	
+AideaPersonneExterieure_Non	0.0594	0	
+Aucun_dip	0.0733	0	
+AppartenancAssociationSolidarite_Membre	0.0734	0	
+CEP	0.1232	0	
+EmpruntAmi_Non	0.0865	0	
+Bac_gen	0.0764	0	
+EmpruntFamilleNon	0.0515	0	
+AidesRecuesOui	0.0463	0	
++moitie	0.0234	0	
+moitie-moitie	0.018	6e-04	
+EmpruntNon	0.0085	0.0128	
+EmpruntOui	-0.0085	0.0128	
+BEPC	-0.0154	0.0045	
+PbArgentFamilleAv18Ans_Non	-0.0438	0	
+-moitie	-0.0239	0	
+une fois	-0.0359	0	
+AidesRecuesNon	-0.0463	0	
+EmpruntFamilleOui	-0.0515	0	
+EmpruntAmi_Oui	-0.0865	0	
+NSP	-0.1581	0	
+AppartenancAssociationSolidarite_PasMembre	-0.0734	0	
+AppartenanceAsociationPaysOrigine_PasMembre	-0.0877	0	
+Sup_Bac+2	-0.0794	0	
+AppartenanceAsociationPaysOrigine.NA	-0.0817	0	
+AideaPersonneExterieure_Oui	-0.0594	0	
+CAP_BEP	-0.274	0	
+Bac_techno_pro	-0.2416	0	
+Bac+2	-0.2831	0	
+AideVersEtranger_Non	-0.3391	0	
+Emprunteur	-0.1461	0	
++ dune fois	-0.1265	0	
+CFEJamais	-0.1412	0	
+GardeFamilleOui	-0.218	0	
+AideAdminFamilleNon	-0.1914	0	
+
