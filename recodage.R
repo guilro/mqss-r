@@ -145,13 +145,20 @@ TEO$NombreUnion <- cut(TEO$Nbunions, breaks = c(0, 1, 2, 3, Inf), labels = c(1:4
 
 # F_SOUSCO Durant la scolarité, séances gratuites d'aide aux devoirs ou d'accompagnement dans une association
 table(TEO$F_Sousco)
-TEO$AideDevoirAsso <- factor(TEO$F_Sousco, label = c("AideDevoirAssoOui", "AidDevoirAssoNon")) 
+TEO$AideDevoirAsso <- factor(TEO$F_Sousco, label = c("AideDevoirAssoOui", "AideDevoirAssoNon"))
+TEO$AideDevoirAsso <- relevel(TEO$AideDevoirAsso, ref="AideDevoirAssoNon")
 
 ## Appartenance à une association regroupant des membres originaires du même pays, DOM ou TOM que l'enquêté ou ses parents
 TEO$AppartenanceAsociationPaysOrigine <- factor(TEO$I_Assor, labels = c ("Membre", "PasMembre", "NSP"))
 
 ## Appartenance de l'enquêté à une association de solidarité ou d'entraide (y compris tontine)
-TEO$AppartenancAssociationSolidarite <- factor(TEO$I_Asssol, labels = c ("Membre", "PasMembre", "Refus", "NSP"))                                                                     
+TEO$AppartenancAssociationSolidarite <- factor(TEO$I_Asssol, labels = c ("Membre", "PasMembre", "Refus", "NSP"))
+TEO$AppartenancAssociationSolidarite <- relevel(TEO$AppartenancAssociationSolidarite, ref="PasMembre")
+
+TEO$AssociationPolitique [TEO$I_Assspo == "1"] <- "AssoPolitiqueOui"
+TEO$AssociationPolitique [TEO$I_Assspo == "2"] <- "AssoPolNon"
+TEO$AssociationPolitique [TEO$I_Assspo %in% c("8", "9")] <- "AssoPolRefusNsp"
+TEO$AssociationPolitique <- factor(TEO$AssociationPolitique)
 
 # Demande d'un prêt dans une banque depuis 5 ans
 TEO$Pretbancaire <- factor(TEO$D_Banqfq, labels = c ("Emprunteur", "NonEmprunteur", "Refus", "NSP"))
