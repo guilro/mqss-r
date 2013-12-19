@@ -187,6 +187,15 @@ TEO$PrepareRepas [TEO$C_Repas == 2] <- "Égalité"
 TEO$PrepareRepas <- factor(TEO$PrepareRepas)
 freq(TEO$PrepareRepas)
 
+##Emprunt d'argent à un(e) amie(s) A_ARGQ_E
+TEO$EmpruntAmi <- factor(TEO$A_Argq_e, label = c("Oui", "Non"))
+## Emprunt d'argent à un(e) voisin(e) A_ARGQ_F
+TEO$EmpruntVoisin <- factor(TEO$A_Argq_f, label = c("Oui", "Non"))
+## Emprunt d'argent à un(e) collègue A_ARGQ_G
+TEO$EmpruntCollegue <- factor(TEO$A_Argq_g, label = c("Oui", "Non"))
+## Emprunt d'argent à une autre personne A_ARGQ_H
+TEO$EmpruntAutre <- factor(TEO$A_Argq_h, label = c("Oui", "Non"))
+
 ####################################
 # autres variable rrcodée par le passé qui peuvent toujours servi
 TEO$SEXE_PI <- factor(TEO$Sexee, label=c("Homme", "Femme"))
