@@ -150,10 +150,12 @@ TEO$AideDevoirAsso <- relevel(TEO$AideDevoirAsso, ref="AideDevoirAssoNon")
 
 ## Appartenance à une association regroupant des membres originaires du même pays, DOM ou TOM que l'enquêté ou ses parents
 TEO$AppartenanceAsociationPaysOrigine <- factor(TEO$I_Assor, labels = c ("Membre", "PasMembre", "NSP"))
+TEO$AssoPayOrigin <- TEO$AppartenanceAsociationPaysOrigine
 
 ## Appartenance de l'enquêté à une association de solidarité ou d'entraide (y compris tontine)
 TEO$AppartenancAssociationSolidarite <- factor(TEO$I_Asssol, labels = c ("Membre", "PasMembre", "Refus", "NSP"))
 TEO$AppartenancAssociationSolidarite <- relevel(TEO$AppartenancAssociationSolidarite, ref="PasMembre")
+TEO$AssoSolidarite <- TEO$AppartenancAssociationSolidarite
 
 TEO$AssociationPolitique [TEO$I_Assspo == "1"] <- "AssoPolitiqueOui"
 TEO$AssociationPolitique [TEO$I_Assspo == "2"] <- "AssoPolNon"
