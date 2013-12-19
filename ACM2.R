@@ -5,7 +5,7 @@ ACM2 <- subset (TEO, select = c(AidesRecues, AideAdminFamille, EmpruntFamille, G
 res.ACM2 <- MCA (ACM2, level.ventil=0.005, graph=F)
 
 ## Test immédiat : nuage des 15 modalités les plus contributives
-plot.MCA(res.ACM2, invisible=c("ind"), title="Nuage des modalites actives Plan 1-2", axes=c(1,2), cex=0.5, autoLab="yes", selectMod="contrib 15", xlim=c(-2,2), ylim=c(-2,2)) # On sélectionne les modalités les pluts contributives
+plot.MCA(res.ACM2, invisible=c("ind"), title="Nuage des modalites actives Plan 1-2", axes=c(1,2), cex=0.8, autoLab="no", selectMod="contrib 10", xlim=c(-2,2), ylim=c(-2,2)) # On sélectionne les modalités les pluts contributives
 
 # Etude des valeurs propres : inertie des axes
 valprop.ACM2 <- res.ACM2$eig[1:10,]
